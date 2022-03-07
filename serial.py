@@ -10,7 +10,7 @@ def serSub_callback(msg):
     ser.port = '/dev/ttyUSB0'
     ser.open()
     values = bytearray(arr)
-    print(values[4],values[5])
+    
     ser.write(values)   
 
     total = 0
